@@ -100,8 +100,10 @@ There are a few optional keyword arguments that are useful only for S3 access.
 
   >>> smart_open.smart_open('s3://', host='s3.amazonaws.com')
   >>> smart_open.smart_open('s3://', profile_name='my-profile')
+  >>> smart_open.smart_open('s3://', session=boto3.Session())
 
-These are both passed to `boto.s3_connect()` as keyword arguments.
+The `host` and `profile` arguments are both passed to `boto.s3_connect()` as keyword arguments.
+The `session` argument allows you to provide a custom `boto3.Session` instance for connecting to S3.
 The S3 reader supports gzipped content, as long as the key is obviously a gzipped file (e.g. ends with ".gz").
 
 Why?
