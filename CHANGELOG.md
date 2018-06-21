@@ -1,3 +1,7 @@
+* 1.6.0, 21st July 2018
+
+  - Add `s3_session` and `s3_upload` arguments
+
 * 1.5.7, 18th March 2018
 
   - Fix author/maintainer fields in `setup.py`, avoid bug from `setuptools==39.0.0` and add workaround for `botocore` and `python==3.3`. Fix #176 (PR [#178](https://github.com/RaRe-Technologies/smart_open/pull/178) & [#177](https://github.com/RaRe-Technologies/smart_open/pull/177), [@menshikh-iv](https://github.com/menshikh-iv) & [@baldwindc](https://github.com/baldwindc))
